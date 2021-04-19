@@ -29,8 +29,8 @@ int main(int argc, const char * argv[]) {
         }
         
     }else{
-        lenDiff = (int)str2.length() - (int)str1.length();
-
+//        lenDiff = (int)str2.length() - (int)str1.length();
+//
 //        for(int i=lenDiff; i>0; i--){
 //
 //            int index = (int)str2.length() - lenDiff;
@@ -39,12 +39,15 @@ int main(int argc, const char * argv[]) {
 //            str1.append(strAdd);
 //
 //        }
+//
+//        for(int i=0; i<str1.size(); i++){
+//            if(str1.at(i) != str2.at(i)){
+//                diff++;
+//            }
+//        }
         
-        for(int i=0; i<str1.size(); i++){
-            if(str1.at(i) != str2.at(i)){
-                diff++;
-            }
-        }
+        
+        // 길이가 다른 경우 어차피 긴 문자열에 맞춰주면 된다. 그리고
         
     }
     
