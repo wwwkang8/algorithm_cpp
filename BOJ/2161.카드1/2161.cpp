@@ -17,7 +17,7 @@ int main() {
         que.push(i);
     };
 
-    while(que.size() != 1){
+    while(que.size() > 1){
         /** 맨위의 카드 버리기 */
         cout << que.front();
         cout << " ";
