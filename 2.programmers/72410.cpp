@@ -13,7 +13,8 @@ using namespace std;
 
 string solution(string new_id) {
     string answer = "";
-    string first_id = new_id;
+    string first_id = "";
+    first_id = new_id;
 
     //1단계 : 소문자로 변환
     for(int i=0; i<first_id.size(); i++){
@@ -22,21 +23,21 @@ string solution(string new_id) {
     cout << "소문자로 변환 : " << first_id << "\n";
 
     //2단계 : 특정 문자만 남기고 모두 제거
-    for(int i = 0; i < new_id.length(); ) {
-        if ((new_id[i] >= 'a' && new_id[i] <= 'z') || (new_id[i] >= '0' && new_id[i] <= '9')
-            || new_id[i] == '-' || new_id[i] == '_' || new_id[i] == '.')
+    for(int i = 0; i < first_id.size(); ) {
+        if ((first_id[i] >= 'a' && first_id[i] <= 'z') || (first_id[i] >= '0' && first_id[i] <= '9')
+            || first_id[i] == '-' || first_id[i] == '_' || first_id[i] == '.')
         {
             i++;
             continue;
         }
 
-        new_id.erase(new_id.begin() + i);
+        first_id.erase(first_id.begin() + i);
     }
 
     // 3 단계
-    for(int i = 1; i < new_id.length(); ){
-        if (new_id[i] == '.' && new_id[i - 1] == '.'){
-            new_id.erase(new_id.begin() + i);
+    for(int i = 1; i < first_id.size(); ){
+        if (first_id[i] == '.' && first_id[i - 1] == '.'){
+            first_id.erase(first_id.begin() + i);
             continue;
         }
         else i++;
