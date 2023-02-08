@@ -20,21 +20,45 @@ public class algorithm {
 
         while(true) {
 
-
-            if (N % K == 0) {
+            if( N % K == 0){
                 N = N / K;
                 cnt++;
-            } else {
-                N = N - 1;
+            }else{
+                N = N -1;
                 cnt++;
+
             }
 
-            // 마지막에 1이 될때까지 빼기
-            if (N == 1) {
+            if(N == 1) {
                 break;
             }
         }
-        System.out.print(cnt);
-    }
+
+        System.out.println(cnt);
+
+
+//        Scanner sc = new Scanner(System.in);
+//
+//        int N = sc.nextInt();
+//        int K = sc.nextInt();
+//        int cnt = 0;
+//
+//        while(true) {
+//
+//            if (N % K == 0) {
+//                N = N / K;
+//                cnt++;
+//            } else {
+//                N = N - 1;
+//                cnt++;
+//            }
+//
+//            // 마지막에 1이 될때까지 빼기
+//            if (N == 1) {
+//                break;
+//            }
+//        }
+//        System.out.print(cnt);
+      }
 
 }
