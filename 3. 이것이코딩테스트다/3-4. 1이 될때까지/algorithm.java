@@ -20,6 +20,7 @@ public class algorithm {
 
         while(true) {
 
+
             if (N % K == 0) {
                 N = N / K;
                 cnt++;
